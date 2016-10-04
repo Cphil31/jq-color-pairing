@@ -5,14 +5,25 @@ $('input').css('background',function() {
 });
 	$('input').on('click',function() {
 		var phil=$(this).data('color');
-		$("body").css('background',phil);
-if($("modify-texte").checked){
-	return $("main").data('color')
-}
-else(){
-	return $(input).data('color')
+		
 
-
+if (checked()){
+ $(".main").css('color',phil)
 
 }
+
+
+ else {
+	
+		$("body").css('background-color',phil);
+
+}
+
+
 });
+
+function checked (){
+
+	return $("#modify-texte").is(":checked");
+}
+
